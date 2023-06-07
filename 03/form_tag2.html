@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        form 태그 내부에 사용되는 태그들:   client ===> Server로 전송
+            - input:
+                type="text": 글자를 입력받도록 하는 태그
+                type="password": 패스워드 입력, *****
+                type="radio": 여러 radio중 하나만 선택 가능
+                type="checkbox": 여러 checkbox중 다중 선택
+                type="submit": form 태그의 action을 호출
+                type="reset": form 태그 내부의 모든 변수를 초기화
+            - select: 아래로 출력되는 내용중 하나를 선택
+                option: 선택 리스트를 작성
+            - textarea: 게시판에서 글을 입력 받도록 하는 태그
+    -->
+    <h3>회원 가입 폼</h3>
+    <hr color="green">
+    <form name="myForm3" action="request.do" method="get">
+        <table border="1px">
+            <tr>
+                <td> 이름: </td>
+                <td> <input type="text" name="name" placeholder="이름을 입력해주세요"> </td>
+            </tr>
+            <tr>
+                <td> 아이디: </td>
+                <td> <input type="text" name="id" placeholder="아이디를 입력해주세요" </td>
+            </tr>
+            <tr>
+                <td> 패스워드: </td>
+                <td> <input type="password" name="pass" placeholder="패스워드를 입력해주세요"> </td>
+            </tr>
+            <tr>
+                <td> 패스워드 확인: </td>
+                <td> <input type="password" name="pass2" placeholder="패스워드 확인을 입력해주세요"> </td>
+            </tr>
+            <tr>
+                <td> 성별: </td>
+                <!-- type="radio": 여러 선택중 하나만 선택
+                    radio는 변수명이 동일하게 처리돼야함,
+                    value에 값이 변수에 들어감
+                -->
+                <td> <input type="radio" name="sex" value="m">남성
+                     <input type="radio" name="sex" value="w">여성
+                </td>
+            </tr>
+            <td> 취미: </td>
+            <!-- type="checkbox": 여러개를 선택: 변수 이름이 달라야한다.
+            -->
+            <td> <input type="checkbox" name="hobby1" value="m1"> 음악감상 &nbsp; &nbsp;
+                 <input type="checkbox" name="hobby2" value="m2"> 독서 &nbsp; &nbsp;
+                 <input type="checkbox" name="hobby2" value="m3"> 운동 &nbsp; &nbsp;
+                 <input type="checkbox" name="hobby2" value="m4"> 등산 &nbsp; &nbsp;
+                 <input type="checkbox" name="hobby2" value="m5"> 게임 &nbsp; &nbsp;
+            </td>
+        </tr>
+                    <td> 휴대전화: </td>
+            <!-- select: option의 선택지 중에 하나만 선택
+                    - option 선택
+            -->
+            <td>
+                <select name = "nation">
+                    <option selected value="082"> 대한민국 </option>
+                    <option value="006"> 미국 </option>
+                    <option value="007"> 영국 </option>
+                    <option value="008"> 캐나다 </option>
+                </select>
+                -
+                <select name = "zone">
+                    <option selected value="010"> 010 </option>
+                    <option value="011"> 011 </option>
+                    <option value="016"> 016 </option>
+                </select>
+                -
+                <input type="text" name="phone1" size="5" maxlength="4">
+                -
+                <input type="text" name="phone2" size="5" maxlength="4">
+            </td>
+        </tr>
+
+        </table>
+    </form>
+</body>
+</html>
