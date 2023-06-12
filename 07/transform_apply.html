@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background-color: yellow;
+        }
+        .c1:hover {     /* 가상 선택자 */
+            /* 부모가 div이므로 상속되어서 적용 */
+            background: green;
+
+            transform: translate(100px, 100px) rotate(45deg) scale(0.7);
+            transition: 2s;     /* 2초 동안 적용 */
+        }
+        .c2:hover {
+            /* margin: 50px; */
+            
+            width: 300px;
+            transition: 3s;     /* 3초 동안 적용 */
+        }
+    </style>
+</head>
+<body>
+    <h3> 2차원 변환 효과 적용하기 </h3>
+    <hr>
+
+    <div>
+        <div class="c1"> 박스 안에 마우스를 올려보세요 </div>
+    </div>
+
+    <div class="c2"> 마우스를 올리면 박스가 늘어납니다. </div>
+
+</body>
+</html>
