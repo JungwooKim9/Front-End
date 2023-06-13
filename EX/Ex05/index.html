@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+        }
+
+        header {
+            width: 1050px;
+            height: 70px;
+            margin: 2px;
+            border: 1px solid red;
+            position: relative;
+            left: 30px;
+        }
+        #header1 {
+            border: 1px solid red;
+            font-size: 11px;
+            position: absolute;
+            right: 110px;
+        }
+        #logo {
+            float: left;
+        }
+        #menu1 {
+            border: 1px solid red;
+            position: absolute;
+            transform: translate(200px,20px);
+        }
+        #menu2 {
+            position: absolute;
+        }
+        #menu3 {
+            border: 1px solid blue;
+            position: absolute;
+            bottom: -42px;
+            width: 755px;
+            height: 35px;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+        }
+        aside {
+            width: 191px;
+            height: 300px;
+            position: absolute;
+            top: 78px;
+            left: 10px;
+            border: 1px solid red;
+            float: left;
+        }
+        footer {
+            width: 1050px;
+            height: 70px;
+            margin: 2px;
+            border: 1px solid red;
+            position: absolute;
+            margin-top: 600px;
+        }
+        section {
+            border: 1px solid blue;
+            width: 758px;
+            height: 260px;
+            margin: 2px;
+            margin-left: 235px;
+            position: relative;
+        }
+        #sec1 {
+            position: absolute;
+        }
+        #sec2 {
+            width: 379px;
+            height: 130px;
+            position: absolute;
+            margin-top: 270px;
+        }
+        #sec3 {
+            width: 379px;
+            height: 130px;
+            position: absolute;
+            margin-top: 400px;
+        }
+        #sec4 {
+            width: 379px;
+            position: absolute;
+            margin-top: 270px;
+            margin-left: 615px;
+        }
+        #loginbox {
+            position: relative;
+            border: 1px solid lightgray;
+            height: 120px;
+            background-color: rgb(245, 245, 245);
+            border-radius: 10px;
+        }
+        #login1 {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        #id {
+            border: 1px solid silver;
+            background-color: white;
+            width: 100px;
+            height: 20px;
+            position: absolute;
+            left: 10px;
+            top: 40px;
+        }
+        #password {
+            border: 1px solid silver;
+            background-color: white;
+            width: 100px;
+            height: 20px;
+            position: absolute;
+            left: 10px;
+            top: 65px;
+        }
+        #login2 {
+            position: absolute;
+            left: 119px;
+            top: 40px;
+        }
+        #login3 {
+            position: absolute;
+            left: 6px;
+            bottom: 3px;
+        }
+        #memo1 {
+            position: relative;
+            border: 1px solid lightgray;
+            height: 120px;
+            background-color: rgb(245, 245, 245);
+            border-radius: 10px;
+            margin-top: 15px;
+            box-shadow: 3px 2px 5px 0.1px lightgray;
+        }
+        #memo2 {
+            position: absolute;
+            top: 10px;
+            left: 5px;
+        }
+        #memo_bar {
+            position: absolute;
+            top: 32px;
+            left: 7px;
+        }
+        #memo3_1 {
+            position: absolute;
+            top: 42px;
+            left: 10px;
+            font-size: 12px;
+        }
+        #memo3_2 {
+            position: absolute;
+            top: 60px;
+            left: 10px;
+            font-size: 12px;
+        }
+        #memo3_3 {
+            position: absolute;
+            top: 78px;
+            left: 10px;
+            font-size: 12px;
+        }
+        #memo3_4 {
+            position: absolute;
+            top: 96px;
+            left: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img id="logo" src="./img/logo.png" alt="">
+        <span id="header1">
+            <span> HOME | </span>
+            <span> LOGIN | </span>
+            <span> JOIN | </span>
+            <span> NOTICE </span>
+        </span>
+        <nav id="menu1">
+            <img id="menu2" src="./img/main_menu_bg.png" alt="">
+            <span id="menu3">
+                <span> 자유 게시판 </span>
+                <span> 기타 연주 </span>
+                <span> 공동 구매 </span>
+                <span> 연주회 안내 </span>
+                <span> 회원 게시판 </span>
+            </span>
+        </nav>
+    </header>
+
+        <aside>
+            <nav id="loginbox">
+                <img id="login1" src="./img/ttl_login.png" alt="">
+                <div id="id"> </div>
+                <div id="password"> </div>
+                <img id="login2" src="./img/btn_login.gif" alt="">
+                <div id="login3">
+                    <img src="./img/btn_join.gif" alt="">
+                    <img src="./img/btn_search.gif" alt="">
+                </div>
+            </nav>
+
+            <nav id="memo1">
+                <img id="memo2" src="./img/ttl_memo.gif" alt="">
+                <hr id="memo_bar" width="170px" color="lightgray">
+                <div id="memo3_1">
+                    <img src="./img/icon_blue.gif" alt="">
+                    <span> 안녕하세요! </span>
+                </div>
+                <div id="memo3_2">
+                    <img src="./img/icon_blue.gif" alt="">
+                    <span> 안녕하세요! </span>
+                </div>
+                <div id="memo3_3">
+                    <img src="./img/icon_blue.gif" alt="">
+                    <span> 안녕하세요! </span>
+                </div>
+                <div id="memo3_4">
+                    <img src="./img/icon_blue.gif" alt="">
+                    <span> 안녕하세요! </span>
+                </div>
+            </nav>
+        </aside>
+
+        <section id="sec1">
+            <img src="./img/main_img.png" alt="">
+        </section>
+        <section id="sec2">
+            <div id="notice1">
+                <img src="./img/latest1.gif" alt="">
+            </div>
+        </section>
+        <section id="sec3">
+            <div id="free1">
+                <img src="./img/lates2" alt="">
+            </div>
+        </section>
+        <section id="sec4">
+            컨텐츠 3
+        </section>
+
+    <footer>
+        푸터
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+        }
+        header {
+            border: 1px solid red;
+            height: 169px;
+            margin: 5px 1px 1px 1px;
+        }
+        #header1 {
+            border: 1px solid red;
+            margin: 10px;
+            margin-left: 20px;
+            float: left;
+        }
+        #header2 {
+            border: 1px solid red;
+            margin-left: 10px;
+            margin-top: 40px;
+            float: left;
+        }
+        #header3 {
+            border: 1px solid red;
+            font-size:small;
+            width: 250px;
+            justify-content: right;
+            display: flex;
+            margin-top: 40px;
+        }
+        #nav1 {
+            border: 1px solid red;
+            width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            margin: 0px 3px 0px 3px;
+        }
+        #section1 {
+            border: 1px solid red;
+            width: 1000px;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 3px;
+        }
+        #art1 {
+            border: 1px solid red;
+            float: left;
+            width: 300px;
+            height: 125px;
+            position: relative;
+        }
+        #art2 {
+            border: 1px solid red;
+            float: left;
+            width: 300px;
+            height: 125px;
+            position: relative;
+        }
+        #art2-1 {
+            font-size:x-small;
+            margin: 10px;
+            float: left;
+            position: absolute;
+        }
+        #art2-2 {
+            font-size: x-small;
+            position: absolute;
+            top: 40px;
+            left: 215px;
+        }
+        #art3 {
+            border: 1px solid red;
+            width: 300px;
+            height: 125px;
+            position: relative;
+        }
+        #section2 {
+            border: 1px solid red;
+            width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            margin: 3px;
+        }
+        #more1 {
+            border: 1px solid red;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+        #more2 {
+            border: 1px solid red;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+        #section3 {
+            border: 1px solid blue;
+            width: 1000px;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="header1" src="./img/logo.gif" alt="logo">
+        <img id="header2" src="./img/moto.gif" alt="moto">
+        <span id="header3"> 로그인 | 회원 가입 | 사이트맵 | 회사 소개 </span>
+        <br> <br>
+        <hr> <br>
+        <nav id="nav1">
+            <img src="./img/menu01.gif" alt="menu1">
+            <img src="./img/menu02.gif" alt="menu2">
+            <img src="./img/menu03.gif" alt="menu3">
+            <img src="./img/menu04.gif" alt="menu4">
+            <img src="./img/menu05.gif" alt="menu5">
+        </nav>
+    </header>
+
+    <main>
+        <section id="section1">
+            <img src="./img/banner01.gif" alt="banner1">
+            <img src="./img/banner02.gif" alt="baaner2">
+            <img src="./img/banner03.gif" alt="banner3">
+        </section>
+
+        <br>
+
+        <section id="section2">
+            <article id="art1"> <img src="./img/customer.gif" alt=""> <img id="more1" src="./img/more.gif" alt="more"> </article>
+            <article id="art2"> <img src="./img/notice.gif" alt="">
+                <div id="art2-1">
+                    <div> 새로운 상품의 출시를 알려드립니다 </div>
+                    <div> 새로운 상품의 출시를 알려드립니다 </div>
+                    <div> 새로운 상품의 출시를 알려드립니다 </div>
+                    <div> 새로운 상품의 출시를 알려드립니다 </div>
+                </div>
+                <div id="art2-2">
+                    <div> 2014-03-03 </div>
+                    <div> 2014-03-03 </div>
+                    <div> 2014-03-03 </div>
+                    <div> 2014-03-03 </div>
+                </div>
+                <img id="more2" src="./img/more.gif" alt="more"> </article>
+            <article id="art3"> <img src="./img/banner_faq.gif" alt=""> </article>
+        </section>
+        <br> <hr>
+
+        <section id="section3">        
+            <ul>
+                <h4> 손해보험 상식</h4>
+                <li> 손해보험이란? </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <article></article>
+        <article></article>
+    </footer>
+</body>
+</html>
