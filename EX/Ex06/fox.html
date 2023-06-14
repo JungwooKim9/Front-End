@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+        }
+        .background {
+            width: 1200px;
+            height: 235px;
+            background-color: rgb(247, 246, 252);
+            margin: 0 auto;
+        }
+        .box {
+            width: 360px;
+            height: 200px;
+            background-color: white;
+            float: left;
+            margin: 16px;
+            border-radius: 15px;
+            border: 1px solid skyblue;
+            position: relative;
+            z-index: 1;
+        }
+        .box .foximg {
+            width: 140px;
+            height: 200px;
+            position: absolute;
+            top: -20px;
+            z-index: 2;
+        }
+        .box .bigtext {
+            font-size: 20px;
+            font-family: 맑은 고딕;
+            font-weight: bolder;
+            width: 190px;
+            height: 85px;
+            position: absolute;
+            right: 20px;
+            top: 30px;
+        }
+        .box .smalltext {
+            font-size: 15px;
+            color: gray;
+            font-family: 맑은 고딕;
+            font-weight: bolder;
+            width: 200px;
+            height: 70px;
+            position: absolute;
+            right: 10px;
+            top: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="box">
+            <img class="foximg" src="./img/fox-in-suit.png" alt="">
+            <span class="bigtext"> 모든 웹사이트를 누가 호스팅하는지 찾으십시오 </span>
+            <span class="smalltext"> 웹사이트의 URL을 입력하여 어떤 호스팅 서비스를 사용하는지 알아보십시오 </span>
+        </div>
+        <div class="box">
+            <img class="foximg" src="./img/fox-with-horn.png" alt="">
+            <span class="bigtext"> 시장 점유율 2021 </span>
+            <span class="smalltext"> 국가별로 나뉜 각 호스팅 회사의 2021 시장 점유율을 살펴보십시오 </span>
+        </div>
+        <div class="box">
+            <img class="foximg" src="./img/fox-with-server.png" alt="">
+            <span class="bigtext"> 웹 호스팅의 일대일 비교 </span>
+            <span class="smalltext"> 3개까지의 웹 호스팅 회사를 간단히 비교하고 어느 것이 더 나은지 보십시오 </span>
+        </div>
+    </div>
+</body>
+</html>

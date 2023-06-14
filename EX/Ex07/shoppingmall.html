@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .menu li {
+            list-style-type: none;
+        }
+        header .title {
+            height: 80px;
+            text-align: center;
+            background-color: rgb(36, 36, 36);
+            font-size: 35px;
+            font-weight: bolder;
+            color: rgb(255, 255, 255);
+            line-height: 80px;
+        }
+        .menu {
+            height: 150px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(131, 131, 131);
+            font-size: 20px;
+            font-weight: bolder;
+            text-align: center;
+            line-height: 37px;
+        }
+        @media only screen and (min-width: 700px) {
+            .menu {
+                height: 50px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(131, 131, 131);
+            font-size: 20px;
+            font-weight: bolder;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            }
+        }
+        .main {
+            height: 350px;
+        }
+        main .table {
+            background-color: rgb(238, 238, 238);
+            border-radius: 5px;
+            width: 90%;
+            margin: auto;
+            margin-top: 20px;
+            line-height: 25px;
+        }
+        .button {
+            background: linear-gradient(to bottom, white, rgb(131,131,131));
+        }
+        main .bigtext {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .memberinput {
+            background: linear-gradient(to bottom, white, rgb(190, 190, 190));
+        }
+        footer {
+            color: rgb(255, 255, 255);
+            background: linear-gradient(to right, black, rgb(131,131,131));
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title"> 쇼핑몰 회원관리 VER 1.0 </div>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li> 회원등록 </li>
+            <li> 회원목록 조회/수정 </li>
+            <li> 회원매출 조회 </li>
+            <li> 홈으로 </li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <h2 class="bigtext"> 쇼핑몰 회원 등록 </h2>
+        <form name="memberform" action="enter" method="GET">
+        <table class="table" border="1" align="center">
+            <tr>
+                <th width="50%"> 회원번호(자동발생) </th>
+                <td> <input class="memberinput" type="text" name="membernumber"> </td>
+            </tr>
+            <tr>
+                <th> 회원성명 </th>
+                <td> <input class="memberinput" type="text" name="membernumber"> </td>
+            </tr>
+            <tr>
+                <th> 회원주소 </th>
+                <td> <input class="memberinput" type="text" name="membername"> </td>
+            </tr>
+            <tr>
+                <th> 가입일자 </th>
+                <td> <input class="memberinput" type="text" name="memberdate"> </td>
+            </tr>
+            <tr>
+                <th> 고객등급[A:VIP, B:일반, C:직원] </th>
+                <td> <input class="memberinput" type="text" name="memberclass"> </td>
+            </tr>
+            <tr>
+                <th> 도시코드 </th>
+                <td> <input class="memberinput" type="text" name="citycode"> </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"> <input class="button" type="submit" value="등록"><input  class="button" type="submit" value="조회"> </td>
+            </tr>
+        </table>
+        </form>
+    </main>
+
+    <footer>
+        HRDKOREA Copyright@2016 All rights reserve.
+            Human Resources Development Service of Korea
+    </footer>
+    
+</body>
+</html>
