@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            background-color:rgb(240, 240, 240);
+            color: rgb(70, 70, 70);
+        }
+        header {
+            height: 130px;
+        }
+        header .logo {
+            font-size: 40px;
+            font-weight: 500;
+            text-align: center;
+            width: 240px;
+            height: 60px;
+            position: absolute;
+            top: 45px;
+            left: 110px;
+        }
+        header .search {
+            width: 180px;
+            position: absolute;
+            top: 75px;
+            left: 645px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .search .headerline {
+            width: 100px;
+            margin: 5px;
+            border: 1px solid rgb(170, 170, 170);
+            border-bottom: 1px;
+            position: relative;
+            top: 5px;            
+        }
+        header .headertext {
+            width: 450px;
+            position: absolute;
+            right: 50px;
+            top: 75px;
+            text-align: center;
+        }
+        header .smalltext {
+            margin: 9px;
+        }
+        .greentext {
+            color: rgb(142, 192, 61);
+        }
+        nav {
+            background-color: rgb(70, 70, 70);;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        nav .navtext {
+            color: white;
+            font-size: 18px;
+        }
+        aside {
+            width: 330px;
+            height: 615px;
+            position: relative;
+            top: 25px;
+            left: 170px;
+            float: left;
+
+        }
+        aside .category {
+            width: 330px;
+            position: absolute;
+        }
+        aside .category .categoryitem {
+            background-color: rgb(142, 192, 61);
+            color: white;
+            font-size: large;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+        }
+        aside .category .categorytext {
+            color: rgb(100, 100, 100);
+            font-weight: bolder;
+            position: relative;
+            font-size: 18px;
+            left: 50px;
+            top: -12px;
+            margin-top: 25px;
+        }
+        .category li {
+            list-style: none;
+        }
+        aside .category .categoryline {
+            border: 1px solid rgb(200, 200, 200);
+            position: absolute;
+            bottom: -15px;
+            left: -50px;
+            width: 330px;
+        }
+        .topsection {
+            position: absolute;
+            top: 25px;
+            left: 500px;
+            width: 1202px;
+            height: 605px;
+        }
+        main {
+            position: relative;
+            height: 1310px;
+        }
+        main .main_img {
+            width: 902px;
+            height: 603px;
+            position: absolute;
+        }
+        main .topsection .noticebox {
+            border: 2px solid rgb(200, 200, 200);
+            background-color: white;
+            width: 300px;
+            height: 350px;
+            position: absolute;
+            right: 0px;
+        }
+        main .topsection .noticebox li {
+            list-style: none;
+            background-color: white;
+        }
+        .notice {
+            position: absolute;
+            top: 5px;
+            left: 15px;
+            font-weight: bolder;
+        }
+        .noticetext {
+            color: rgb(100, 100, 100);
+            width: 250px;
+            font-size: 15px;
+            font-weight: bolder;
+            position: relative;
+            left: 30px;
+            top: 40px;
+        }
+        .bluedot{
+            position: relative;
+            top: 60px;
+            left: 12px;
+        }
+        .noticeline {
+            border: 1px solid rgb(200, 200, 200);
+            position: absolute;
+            bottom: -15px;
+            left: -15px;
+            width: 299px;
+        }
+        .eventbox {
+            width: 300px;
+            position: absolute;
+            right: 0px;
+            top: 365px;
+            z-index: 1;
+        }
+        .eventimg {
+            position: absolute;
+            width: 250px;
+            right: 23px;
+            bottom: 15px;
+            z-index: 2;
+        }
+        main .bottomsection {
+            width: 1532px;
+            height: 615px;
+            position: relative;
+            top: 670px;
+            left: 170px;
+        }
+        .bottomsection .specialshopbox {
+            width: 936px;
+            position: absolute;
+            left: 0px;
+            z-index: 1;
+        }
+        .special1 {
+            border: 2px solid rgb(200, 200, 200);
+            width: 415px;
+            padding: 30px;
+            position: absolute;
+            left: 45px;
+            bottom: 20px;
+            z-index: 2;
+        }
+        .special2 {
+            border: 2px solid rgb(200, 200, 200);
+            width: 415px;
+            padding: 30px;
+            position: absolute;
+            left: 480px;
+            bottom: 20px;
+            z-index: 2;
+        }
+        .bottombox {
+            position: absolute;
+            right: 0px;
+            width: 595px;
+            height: 614px;
+        }
+        .bottomsmallbox {
+            width: 590px;
+            height: 199px;
+            position: relative;
+            left: 5px;
+            margin-bottom: 8px;
+        }
+        .bottomxsmallbox1 {
+            position: absolute;
+            width: 190px;
+            left: 195px;
+            top: 12px;
+        }
+        .bottomxsmallbox2 {
+            position: absolute;
+            width: 190px;
+            left: 390px;
+            top: 12px;
+        }
+        .sectionline {
+            width: 1533px;
+            border: 1px solid rgb(142, 192, 61);
+            position: absolute;
+            left: 170px;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="greentext"> DAYUN </span>
+            <span> ART </span>
+        </div>
+        <div class="search"> <span class="greentext"> SEARCH </span> <span class="headerline"> </span> <img src="./img/btn_search.gif" alt=""> </div>
+        <div class="headertext">
+            <span class="greentext smalltext"> 로그인 </span>
+            <span class="greentext smalltext"> 회원가입 </span>
+            <span class="smalltext"> 마이페이지 </span>
+            <span class="smalltext"> 이용안내 </span>
+            <span class="smalltext"> 고객센터 </span>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <span class="navtext"> 상세 페이지 </span>
+        <span class="navtext"> 장바구니 </span>
+        <span class="navtext"> 고객 갤러리 </span>
+        <span class="navtext"> 주문배송 </span>
+        <span class="navtext"> 자주 하는 질문 </span>
+    </nav>
+
+    <main>
+
+        <aside>
+            <ul class="category">
+                <li class="categoryitem"> CATEGORY ITEM </li>
+                <li class="categorytext"> 생활 아트 <span class="categoryline"> </span> </li>
+                <li class="categorytext"> 캔버스 아트 <span class="categoryline"> </span> </li>
+                <li class="categorytext"> 사진 벽지 <span class="categoryline"> </span> </li>
+                <li class="categorytext"> 창문형/현관문형 <span class="categoryline"> </span> </li>
+                <li class="categorytext"> 포인트 벽지 <span class="categoryline"> </span> </li>
+                <li class="categorytext"> 세계지도 <span class="categoryline"> </span> </li>
+                <li class="categorytext"> 앤티크 세계지도 벽지 <span class="categoryline"> </span> </li>
+                <li class="categorytext"> 입체 세계지도 벽지 <span class="categoryline"> </span> </li>
+                <li class="categorytext"> 어린이방 세계지도 <span class="categoryline"> </span> </li>
+                <li class="categorytext"> 족자형 틀스크린 <span class="categoryline"> </span> </li>
+                <li class="categorytext"> 맞춤제작 결제창 <span class="categoryline"> </span> </li>
+            </ul>
+        </aside>
+
+        <section class="topsection">
+            <img class="main_img" src="./img/main_img.gif">
+            <ul class="noticebox">
+                <span class="greentext notice"> NOTICE <span class="noticeline"> </span> </span>
+                <img class="bluedot" src="./img/blue_dot.gif"> <li class="noticetext"> 폭설로 인한 배송지연 안내 </li>
+                <img class="bluedot" src="./img/blue_dot.gif"> <li class="noticetext"> 폭설로 인한 배송지연 안내 </li>
+                <img class="bluedot" src="./img/blue_dot.gif"> <li class="noticetext"> 폭설로 인한 배송지연 안내 </li>
+                <img class="bluedot" src="./img/blue_dot.gif"> <li class="noticetext"> 폭설로 인한 배송지연 안내 </li>
+                <img class="bluedot" src="./img/blue_dot.gif"> <li class="noticetext"> 폭설로 인한 배송지연 안내 </li>
+                <img class="bluedot" src="./img/blue_dot.gif"> <li class="noticetext"> 폭설로 인한 배송지연 안내 </li>
+                <img class="bluedot" src="./img/blue_dot.gif"> <li class="noticetext"> 폭설로 인한 배송지연 안내 </li>
+            </ul>
+            
+            <img class="eventbox" src="./img/week_event.gif">
+            <img class="eventimg" src="./img/week_event_img.gif">
+        </section>
+
+        <section class="bottomsection">
+            <img class="specialshopbox" src="./img/special_shop.gif">
+            <img class="special1" src="./img/special_img1.gif">
+            <img class="special2" src="./img/special_img2.gif">
+
+            <div class="bottombox">
+                <div class="bottomsmallbox">
+                    <img src="./img/landscape.gif" style="width: 590px; height: 201px;">
+                    <img class="bottomxsmallbox1" src="./img/landscape_img1.gif">
+                    <img class="bottomxsmallbox2" src="./img/landscape_img2.gif">
+                </div>
+
+                <div class="bottomsmallbox">
+                    <img src="./img/point_wallpaper.gif" style="width: 590px; height: 201px;">
+                    <img class="bottomxsmallbox1" src="./img/landscape_img1.gif">
+                    <img class="bottomxsmallbox2" src="./img/landscape_img2.gif">
+                </div>
+            
+                <div class="bottomsmallbox">
+                    <img src="./img/children.gif" style="width: 590px; height: 201px;">
+                    <img class="bottomxsmallbox1" src="./img/landscape_img1.gif">
+                    <img class="bottomxsmallbox2" src="./img/landscape_img2.gif">
+                </div>
+            </div>
+        </section>
+
+        <div class="sectionline"> </div>
+    </main>
+    
+</body>
+</html>
