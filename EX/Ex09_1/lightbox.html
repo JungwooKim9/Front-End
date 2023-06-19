@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .allpic li {
+            list-style-type: none;
+            display: inline-table;
+        }
+        .allpic {
+            width: 375px;
+            margin: auto;
+        }
+        #bigbox {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0, 0.7);
+            display: none;
+        }
+        #bigbox #bigboximg {
+            border: 5px solid white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="allpic">
+        <ul>
+            <li> <img class="pic" src="images/tree-1-thumb.jpg" data-src="images/tree-1.jpg"></li>
+            <li> <img class="pic" src="images/tree-2-thumb.jpg" data-src="images/tree-2.jpg"></li>
+            <li> <img class="pic" src="images/tree-3-thumb.jpg" data-src="images/tree-3.jpg"></li>
+            <li> <img class="pic" src="images/tree-4-thumb.jpg" data-src="images/tree-4.jpg"></li>
+            <li> <img class="pic" src="images/tree-5-thumb.jpg" data-src="images/tree-5.jpg"></li>
+            <li> <img class="pic" src="images/tree-6-thumb.jpg" data-src="images/tree-6.jpg"></li>
+        </ul>
+    </div>
+
+    <div id="bigbox">
+        <img id="bigboximg" src="images/tree-1.jpg">
+    </div>
+
+    <script>
+        var pics = document.getElementsByClassName("pic");
+        var bigbox = document.getElementById("bigbox");
+        var bigboximg = document.getElementById("bigboximg");
+
+        for(var i=0; i<pics.length; i++) {
+            pics[i].addEventListener("click", showBigbox)
+        }
+
+        function showBigbox () {
+            var imgget = this.getAttribute("data-src");
+
+            bigboximg.setAttribute("src", imgget);
+            bigbox.style.display="block"
+        }
+        
+        bigbox.onclick = function() {
+            bigbox.style.display="none"
+        }
+    </script>
+</body>
+</html>
