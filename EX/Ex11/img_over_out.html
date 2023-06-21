@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 300px;
+            margin: 10px auto;
+            cursor: pointer;
+        }
+        #corver {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="images/easys-1.jpg" id="cover">
+    </div>
+
+    <script>
+        // 자바스크립트를 사용해서 easys-1.jpg에 마우스를 오버시 easys-2.jpg를 출력
+        // 마우스를 아웃시 다시 원래대로 출력
+        var cover = document.getElementById("cover");
+        cover.addEventListener("mouseover", changePic);
+        cover.addEventListener("mouseout", originPic);
+        
+        function changePic() {
+            cover.src="images/easys-2.jpg";
+        }
+
+        function originPic() {
+            cover.src="images/easys-1.jpg";
+        }
+    </script>
+</body>
+</html>

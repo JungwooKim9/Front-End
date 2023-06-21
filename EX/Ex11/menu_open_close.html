@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #toc-content {
+            display: none;
+        }
+        #clickbox {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    목차[ <span href="#" id="clickbox"> 보이기 </span> ]
+    <ol id = "toc-content">
+        <li> HTML </li>
+        <li> CSS </li>
+        <li> Javascript </li>
+    </ol>
+
+    <script>
+        // ol 태그의 내용을 기본 출력시 출력되지 않도록 하고 보이기를 클릭시 출력
+        // 보여져 있을 때 숨기기라고 처리하고, 숨기기 클릭시 ol내용 숨김
+        function openClose() {
+            if(document.getElementById('toc-content').style.display === block) {
+                
+            }
+        }
+    </script>
+</body>
+</html>
